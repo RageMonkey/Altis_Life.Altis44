@@ -134,13 +134,11 @@ class WeaponShops {
             { "arifle_sdar_F", "Taser Rifle", 20000, 7500 },
             { "hgun_P07_snds_F", "Stun Pistol", 2000, 650 },
             { "hgun_P07_F", "", 7500, 1500 },
-            { "HandGrenade_Stone", "Flashbang", 1700, -1 },
             { "Binocular", "", 150, -1 },
             { "ItemGPS", "", 100, 45 },
             { "ToolKit", "", 250, 75 },
             { "muzzle_snds_L", "", 650, -1 },
             { "FirstAidKit", "", 150, 65 },
-            { "Medikit", "", 1000, 450 },
             { "NVGoggles", "", 2000, 980 }
         };
         mags[] = {
@@ -155,38 +153,130 @@ class WeaponShops {
         license = "";
         level[] = { "life_coplevel", "SCALAR", 2, "You must be a Patrol Officer Rank!" };
         items[] = {
-            { "arifle_MX_F", "", 35000, 7500 },
-            { "SMG_02_ACO_F", "", 30000, -1 },
-            { "HandGrenade_Stone", "Flashbang", 1700, -1 },
-            { "MineDetector", "", 1000, 500 },
-            { "acc_flashlight", "", 750, 100 },
-            { "optic_Holosight", "", 1200, 275 },
-            { "optic_Arco", "", 2500, -1 },
-            { "muzzle_snds_H", "", 2750, -1 }
+            { "SMG_01_F","Vermin", "", 35000, 500 },
+            { "SMG_02_ACO_F", "", 30000, 500 },
+            { "arifle_MXC_Black_F", "", 50000, 500 },
+            { "arifle_MX_Black_F", "", 60000, 500 },
+			{ "arifle_MX_GL_Black_F", "", 60000, 500 },
+            { "arifle_MXM_Black_F", "", 70000, 500 },
+            { "optic_Aco", "", 2500, -50 },
+			{ "optic_Holosight", "", 2500, 50 },
+			{ "optic_Arco", "", 2500, 50 },
+			{ "acc_flashlight", "", 1200, 50 },
+			{ "muzzle_snds_acp", "", 3700, 50 },
+			{ "muzzle_snds_H", "", 2009, 50 },
+            { "bipod_01_F_blk", "", 10000, 50 },
+			{ "HandGrenade_Stone", "Flashbang", 1700, 50 },
+			{ "B_UavTerminal", "", 5000, 50 },
+			{ "FirstAidKit", "", 150, 5 },
+			{ "ToolKit", "", 250, 50 }
         };
         mags[] = {
-            { "30Rnd_65x39_caseless_mag", "", 130 },
-            { "30Rnd_9x21_Mag", "", 250 }
+            { "16Rnd_9x21_Mag", "", 50},
+            { "30Rnd_9x21_Mag", "", 100 },
+			{ "30Rnd_45ACP_Mag_SMG_01", "", 200 },
+			{ "30Rnd_65x39_caseless_mag", "", 250 }
         };
     };
 
     class cop_sergeant {
-        name = "Altis Sergeant Officer Shop";
+        name = "Altis Sergeant Shop";
         side = "cop";
         license = "";
         level[] = { "life_coplevel", "SCALAR", 3, "You must be a Sergeant Rank!" };
         items[] = {
-            { "hgun_ACPC2_F", "", 17500, -1 },
-            { "SMG_02_ACO_F", "", 15000, -1 },
-            { "arifle_MXC_F", "", 30000, 5000 },
-            { "HandGrenade_Stone", "Flashbang", 1700, -1 },
-            { "optic_Arco", "", 2500, -1 },
-            { "muzzle_snds_H", "", 2750, -1 }
+			{ "hgun_ACPC2_F","", "", 17500, 500 },
+            { "SMG_01_F","Vermin", "", 35000, 500 },
+            { "SMG_02_ACO_F", "", 30000, 500 },
+			{ "arifle_Mk20C_plain_F", "", 35000, 500 },
+            { "arifle_MXC_Black_F", "", 50000, 500 },
+            { "arifle_MX_Black_F", "", 60000, 500 },
+			{ "arifle_MX_GL_Black_F", "", 60000, 500 },
+            { "arifle_MXM_Black_F", "", 70000, 500 },
+			{ "arifle_MX_SW_Black_F", "", 80000, 500 },
+			{ "srifle_DMR_03_F", "", 60000, 500 },
+			{ "srifle_EBR_F", "", 60000, 500 },
+			{ "srifle_GM6_F", "", 150000, 500 },
+			{ "launch_Titan_F", "", 200000, 500 },
+            { "optic_Aco", "", 2500, -50 },
+			{ "optic_Holosight", "", 2500, 50 },
+			{ "optic_Arco", "", 2500, 50 },
+			{ "optic_MRCO", "", 5000, 50 },
+			{ "optic_DMS", "", 7500, 50 },
+			{ "optic_AMS", "", 7500, 50 },
+			{ "optic_SOS", "", 10000, 50 },
+			{ "acc_flashlight", "", 1200, 50 },
+			{ "muzzle_snds_acp", "", 3700, 50 },
+			{ "muzzle_snds_H", "", 2009, 50 },
+            { "bipod_01_F_blk", "", 10000, 50 },
+			{ "HandGrenade_Stone", "Flashbang", 1700, 50 },
+			{ "B_UavTerminal", "", 5000, 50 },
+			{ "FirstAidKit", "", 150, 5 },
+			{ "ToolKit", "", 250, 50 }
         };
         mags[] = {
-            { "9Rnd_45ACP_Mag", "", 200 },
-            { "30Rnd_9x21_Mag", "", 60 },
-            { "30Rnd_65x39_caseless_mag", "", 100, -1 }
+            { "16Rnd_9x21_Mag", "", 50},
+            { "30Rnd_9x21_Mag", "", 100 },
+			{ "9Rnd_45ACP_Mag", "", 100 },
+			{ "30Rnd_45ACP_Mag_SMG_01", "", 200 },
+			{ "30Rnd_556x45_Stanag", "", 250 },
+			{ "30Rnd_65x39_caseless_mag", "", 250 },
+			{ "100Rnd_65x39_caseless_mag", "", 500 },
+			{ "20Rnd_762x51_Mag", "", 300 },
+			{ "5Rnd_127x108_Mag", "", 500 },
+			{ "Titan_AA", "", 20000 }
+        };
+    };
+	
+	class cop_captain {
+        name = "Altis Captain Shop";
+        side = "cop";
+        license = "";
+        level[] = { "life_coplevel", "SCALAR", 4, "You must be a Captain Rank!" };
+        items[] = {
+            { "hgun_ACPC2_F","", "", 17500, 500 },
+            { "SMG_01_F","Vermin", "", 35000, 500 },
+            { "SMG_02_ACO_F", "", 30000, 500 },
+			{ "arifle_Mk20C_plain_F", "", 35000, 500 },
+            { "arifle_MXC_Black_F", "", 50000, 500 },
+            { "arifle_MX_Black_F", "", 60000, 500 },
+			{ "arifle_MX_GL_Black_F", "", 60000, 500 },
+            { "arifle_MXM_Black_F", "", 70000, 500 },
+			{ "arifle_MX_SW_Black_F", "", 80000, 500 },
+			{ "srifle_DMR_03_F", "", 60000, 500 },
+			{ "srifle_EBR_F", "", 60000, 500 },
+			{ "srifle_GM6_F", "", 150000, 500 },
+			{ "srifle_LRR_F", "", 100000, 500 },
+			{ "launch_Titan_F", "", 200000, 500 },
+            { "optic_Aco", "", 2500, -50 },
+			{ "optic_Holosight", "", 2500, 50 },
+			{ "optic_Arco", "", 2500, 50 },
+			{ "optic_MRCO", "", 5000, 50 },
+			{ "optic_DMS", "", 7500, 50 },
+			{ "optic_AMS", "", 7500, 50 },
+			{ "optic_SOS", "", 10000, 50 },
+			{ "optic_LRPS", "", 10000, 50 },
+			{ "acc_flashlight", "", 1200, 50 },
+			{ "muzzle_snds_acp", "", 3700, 50 },
+			{ "muzzle_snds_H", "", 2009, 50 },
+            { "bipod_01_F_blk", "", 10000, 50 },
+			{ "HandGrenade_Stone", "Flashbang", 1700, 50 },
+			{ "B_UavTerminal", "", 5000, 50 },
+			{ "FirstAidKit", "", 150, 5 },
+			{ "ToolKit", "", 250, 50 }
+        };
+        mags[] = {
+            { "16Rnd_9x21_Mag", "", 50},
+            { "30Rnd_9x21_Mag", "", 100 },
+			{ "9Rnd_45ACP_Mag", "", 100 },
+			{ "30Rnd_45ACP_Mag_SMG_01", "", 200 },
+			{ "30Rnd_556x45_Stanag", "", 250 },
+			{ "30Rnd_65x39_caseless_mag", "", 250 },
+			{ "100Rnd_65x39_caseless_mag", "", 500 },
+			{ "20Rnd_762x51_Mag", "", 300 },
+			{ "5Rnd_127x108_Mag", "", 500 },
+			{ "7Rnd_408_Mag", "", 1000 },
+			{ "Titan_AA", "", 20000 }
         };
     };
 
