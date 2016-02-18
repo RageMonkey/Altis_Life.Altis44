@@ -85,9 +85,8 @@ class CarShops {
         vehicles[] = {
             { "C_Offroad_01_F", 5000, { "" }, { "", "", -1 } },
             { "C_SUV_01_F", 20000, { "" }, { "", "", -1 } },
-            { "C_Hatchback_01_sport_F", 30000, { "" }, { "life_coplevel", "SCALAR", 1 } },
-            { "B_MRAP_01_F", 30000, { "" }, { "life_coplevel", "SCALAR", 2 } },
-            { "B_MRAP_01_hmg_F", 750000, { "" }, { "life_coplevel", "SCALAR", 3 } }
+            { "C_Hatchback_01_sport_F", 100000, { "" }, { "life_coplevel", "SCALAR", 2 } },
+            { "B_MRAP_01_F", 50000, { "" }, { "life_coplevel", "SCALAR", 3 } }
         };
     };
 
@@ -102,8 +101,11 @@ class CarShops {
     class cop_air {
         side = "cop";
         vehicles[] = {
-            { "B_Heli_Light_01_F", 75000, { "cAir" }, { "", "", -1 } },
-            { "B_Heli_Transport_01_F", 200000, { "cAir" }, { "life_coplevel", "SCALAR", 3 } }
+            { "	C_Heli_Light_01_civil_F", 75000, { "cAir" }, { "", "", -1 } },
+            { "B_Heli_Light_01_F", 100000, { "cAir" }, { "life_coplevel", "SCALAR", 1 } },
+			{ "I_Heli_light_03_unarmed_F", 300000, { "cAir" }, { "life_coplevel", "SCALAR", 2 } },
+			{ "B_Heli_Transport_01_F", 200000, { "cAir" }, { "life_coplevel", "SCALAR", 3 } },
+			{ "B_Heli_Transport_01_camo_F", 300000, { "cAir" }, { "life_coplevel", "SCALAR", 4 } }
         };
     };
 
@@ -202,9 +204,41 @@ class LifeCfgVehicles {
         garageSell[] = { 0, 85000, 0, 0 };
         insurance = 16000;
         chopShop = 45000;
-        textures[] = {};
+        textures[] = {
+            { "Police", "cop", {
+                "textures\cop\vehicles\ghosthawk_swat_front.jpg",
+                "textures\cop\vehicles\ghosthawk_swat_back.jpg"
+            } }
+        };
+    };
+	
+	class B_Heli_Transport_01_camo_F {
+        vItemSpace = 200;
+        storageFee[] = { 0, 50000, 0, 0 };
+        garageSell[] = { 0, 85000, 0, 0 };
+        insurance = 16000;
+        chopShop = 45000;
+        textures[] = {
+            { "Police", "cop", {
+                "textures\cop\vehicles\ghosthawk_swat_front_black.jpg",
+                "textures\cop\vehicles\ghosthawk_swat_back_black.jpg"
+            } }
+        };
     };
 
+	class I_Heli_light_03_unarmed_F {
+        vItemSpace = 200;
+        storageFee[] = { 0, 50000, 0, 0 };
+        garageSell[] = { 0, 85000, 0, 0 };
+        insurance = 16000;
+        chopShop = 45000;
+        textures[] = {
+            { "Police", "cop", {
+                "textures\cop\vehicles\hellcat_official.jpg"
+            } }
+        };
+    };
+	
     class B_MRAP_01_hmg_F {
         vItemSpace = 100;
         storageFee[] = { 1000, 1000, 1000, 1000 };
@@ -435,7 +469,7 @@ class LifeCfgVehicles {
                 "#(argb,8,8,3)color(0.6,0.3,0.01,1)"
             } },
             { "Police", "cop", {
-                "#(ai,64,64,1)Fresnel(1.3,7)"
+                "textures\cop\vehicles\offroad_official.jpg"
             } }
         };
     };
@@ -502,7 +536,7 @@ class LifeCfgVehicles {
                 "\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_sport06_co.paa"
             } },
             { "Police", "cop", {
-                "#(ai,64,64,1)Fresnel(1.3,7)"
+                "textures\cop\vehicles\sports_official.jpg"
             } }
         };
     };
@@ -638,7 +672,7 @@ class LifeCfgVehicles {
                 "\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_04_co.paa"
             } },
             { "Police", "cop", {
-                "\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_02_co.paa"
+                "textures\cop\vehicles\suv_official.jpg"
             } },
         };
     };
@@ -682,9 +716,9 @@ class LifeCfgVehicles {
         insurance = 2500;
         chopShop = 15000;
         textures[] = {
-            { "Black", "cop", {
-                "#(argb,8,8,3)color(0.05,0.05,0.05,1)",
-                "#(argb,8,8,3)color(0.05,0.05,0.05,1)"
+            { "Police", "cop", {
+                "textures\cop\vehicles\hunter_blue_body.jpg",
+                "textures\cop\vehicles\hunter_blue_back.jpg"
             } }
         };
     };
@@ -697,7 +731,7 @@ class LifeCfgVehicles {
         chopShop = 125000;
         textures[] = {
             { "Police", "cop", {
-                "\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_ion_co.paa"
+                "textures\cop\vehicles\hummingbird_official.jpg"
             } },
             { "Sheriff", "civ", {
                 "\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_sheriff_co.paa"
